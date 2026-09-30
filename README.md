@@ -174,7 +174,15 @@ go build -o traftest main.go
 Si **TrafTest** te ahorra tiempo y te resulta útil en tu día a día como desarrollador, puedes apoyar su mantenimiento y la creación de nuevas funciones:
 
 - ⭐ **Danos una Estrella en GitHub:** Ayuda a que más desarrolladores conozcan la herramienta.
-- ☕ **Patrocina el desarrollo:** Puedes donar a través del botón **[Sponsor](https://github.com/sponsors/eyejdev)** en la parte superior del repositorio o compartir feedback y nuevas ideas en la sección de *Issues/Discussions*.
+- ☕ **Invítanos un café:** Apoya el desarrollo a través de [Buy Me a Coffee (eyejdev)](https://buymeacoffee.com/eyejdev) o mediante el botón **[Sponsor](https://github.com/sponsors/eyejdev)** en la parte superior del repositorio.
+
+<br />
+
+<div align="center">
+  <a href="https://buymeacoffee.com/eyejdev" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="42px" width="150px">
+  </a>
+</div>
 
 ---
 
