@@ -169,6 +169,15 @@ go build -o traftest main.go
 
 ---
 
+## 💖 Apoya el Proyecto / Patrocinios
+
+Si **TrafTest** te ahorra tiempo y te resulta útil en tu día a día como desarrollador, puedes apoyar su mantenimiento y la creación de nuevas funciones:
+
+- ⭐ **Danos una Estrella en GitHub:** Ayuda a que más desarrolladores conozcan la herramienta.
+- ☕ **Patrocina el desarrollo:** Puedes donar a través del botón **[Sponsor](https://github.com/sponsors/eyejdev)** en la parte superior del repositorio o compartir feedback y nuevas ideas en la sección de *Issues/Discussions*.
+
+---
+
 ## 📄 Licencia
 
 Este proyecto está bajo la Licencia **MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
