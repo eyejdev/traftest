@@ -1,6 +1,6 @@
-# These are supported funding model platforms
+# Configuración de Patrocinios y Donaciones para TrafTest
 
 github: [eyejdev]
-# buy_me_a_coffee: eyejdev
+buy_me_a_coffee: eyejdev
 # ko_fi: eyejdev
 # custom: ['https://goenma.com/donate']
