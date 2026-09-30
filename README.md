@@ -53,7 +53,16 @@ go install github.com/eyejdev/traftest@latest
 
 ## 🚀 Guía Práctica para Principiantes
 
-### 🔰 1. Tu primera prueba en 1 segundo (Modo Visual Web)
+### 🔰 1. ¿No tienes una API lista? Prueba con un servidor público de prueba
+Si estás empezando y solo quieres ver cómo funciona la herramienta de inmediato:
+```bash
+traftest https://jsonplaceholder.typicode.com/posts/1 -c 5 -r 10 -d 10s
+```
+*Esto enviará 10 peticiones por segundo durante 10 segundos a un servidor público de pruebas y abrirá tus gráficos en vivo.*
+
+---
+
+### 🚀 2. Tu primera prueba sobre tu API local (Modo Visual Web)
 Simplemente pasa la dirección de tu aplicación local:
 ```bash
 traftest http://localhost:8080/api/productos
@@ -62,7 +71,7 @@ traftest http://localhost:8080/api/productos
 
 ---
 
-### ⏱️ 2. Simular tráfico constante durante un tiempo
+### ⏱️ 3. Simular tráfico constante durante un tiempo
 Supongamos que quieres simular **50 peticiones por segundo** durante **30 segundos** con **10 usuarios simultáneos (workers)**:
 ```bash
 traftest http://localhost:8080/api/usuarios -c 10 -r 50 -d 30s
@@ -73,7 +82,7 @@ traftest http://localhost:8080/api/usuarios -c 10 -r 50 -d 30s
 
 ---
 
-### 📬 3. Probar peticiones POST con envío de datos (JSON)
+### 📬 4. Probar peticiones POST con envío de datos (JSON)
 Si tienes un endpoint de registro o creación:
 ```bash
 traftest http://localhost:8080/api/crear -X POST -b '{"nombre":"Juan", "rol":"dev"}' -c 5 -n 200
@@ -86,7 +95,7 @@ traftest http://localhost:8080/api/crear -X POST -b '{"nombre":"Juan", "rol":"de
 
 ---
 
-### 🔐 4. Probar endpoints protegidos con Tokens / Headers
+### 🔐 5. Probar endpoints protegidos con Tokens / Headers
 Si tu API requiere autenticación mediante Token Bearer o API Keys:
 ```bash
 traftest http://localhost:8080/api/perfil -H "Authorization: Bearer MI_TOKEN_SECRETO" -c 10 -n 500
@@ -94,7 +103,7 @@ traftest http://localhost:8080/api/perfil -H "Authorization: Bearer MI_TOKEN_SEC
 
 ---
 
-### 🖥️ 5. Modo Terminal Interactiva (TUI)
+### 🖥️ 6. Modo Terminal Interactiva (TUI)
 Si prefieres no abrir el navegador y ver todo en tu consola:
 ```bash
 traftest --cli http://localhost:8080/health -c 10 -n 1000 -o reporte.md

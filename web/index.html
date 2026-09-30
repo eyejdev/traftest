@@ -223,13 +223,16 @@
         <div>
           <h4 class="font-semibold text-sky-400 mb-1">💻 Comandos CLI Frecuentes</h4>
           <pre class="bg-slate-950 p-3 rounded-lg text-xs font-mono text-slate-300 border border-slate-800 overflow-x-auto space-y-1">
-<span class="text-slate-500"># 1. Benchmark con 20 workers y 100 req/s durante 30s</span>
+<span class="text-slate-500"># 1. Probar con un servidor público (si no tienes API local corriendo)</span>
+traftest https://jsonplaceholder.typicode.com/posts/1 -c 5 -r 10 -d 10s
+
+<span class="text-slate-500"># 2. Benchmark con 20 workers y 100 req/s durante 30s</span>
 traftest http://localhost:8080/api/users -c 20 -r 100 -d 30s
 
-<span class="text-slate-500"># 2. Petición POST con JSON y Header de Autenticación</span>
+<span class="text-slate-500"># 3. Petición POST con JSON y Header de Autenticación</span>
 traftest http://localhost:8080/api/items -X POST -H "Authorization: Bearer mytoken" -b '{"name":"item1"}'
 
-<span class="text-slate-500"># 3. Modo Terminal Interactiva (TUI) con exportación</span>
+<span class="text-slate-500"># 4. Modo Terminal Interactiva (TUI) con exportación</span>
 traftest --cli http://localhost:8080/health -c 10 -n 1000 -o report.md</pre>
         </div>
       </div>
