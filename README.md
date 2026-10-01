@@ -17,6 +17,10 @@
 
 <br />
 
+<img src="assets/dashboard-preview.png" alt="TrafTest Web Dashboard Preview" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
+
+<br />
+
 </div>
 
 ---
